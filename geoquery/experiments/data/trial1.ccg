@@ -1,0 +1,17 @@
+the state
+(lambda $0:e (state:<s,t> $0))
+
+the pink state
+(lambda $0:e (and:<t*,t> (pink:<e,t> $0) (state:<s,t> $0)))
+
+the dark state
+(lambda $0:e (and:<t*,t> (dark:<e,t> $0) (state:<s,t> $0)))
+
+the dark pink state
+(lambda $0:e (and:<t*,t> (dark:<e,t> $0) (and:<t*,t> (pink:<e,t> $0) (state:<s,t> $0))))
+
+the state is dark
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (dark:<e,t> $0)))
+
+the state is dark and pink
+(lambda $0:e (and:<t*,t> (state:<s,t> $0) (and:<t*,t> (dark:<e,t> $0) (pink:<e,t> $0))))
